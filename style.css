@@ -1,0 +1,68 @@
+.box {
+    border: 2px solid #000;
+    margin: 5px;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container header, main {
+    display: flex;
+}
+
+.container header .box {
+    height: 80px;
+}
+
+.container header .box.box1 {
+    flex-grow: 4.8;
+}
+
+.container header .box.box2 {
+    flex-grow: 1;
+}
+
+.container main {
+    flex-direction: row;
+    height: 78vh;
+}
+
+.container main .sideBar, .content {
+    display: flex;
+}
+
+.container main .sideBar {
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.container main .sideBar .box{
+    width: 300px;
+}
+
+.container main .sideBar .box.box1 {
+    height: 30%;
+}
+
+.container main .sideBar .box.box2 {
+    height: 70%;
+    flex-grow: 5;
+}
+
+.container main .content {
+    flex-direction: row;   
+    flex-grow: 5;
+    width: 100%;
+}
+
+.container main .content .box.box1 {
+    flex-grow: 4;
+}
+
+.container main .content .box.box2 {
+    flex-grow: 1;
+}
+
