@@ -1,7 +1,7 @@
 .box {
     border: 1px solid #000;
-    margin: 5px;
-    padding: 20px;
+    margin: 3px;
+    padding: 15px;
 }
 
 .container {
@@ -14,7 +14,7 @@
 }
 
 .container header .box {
-    height: 80px;
+    height: 50px;
 }
 
 .container header .box.box1 {
@@ -27,7 +27,7 @@
 
 .container main {
     flex-direction: row;
-    height: 78vh;
+    height: 70vh;
 }
 
 .container main .sideBar, .content {
@@ -40,11 +40,11 @@
 }
 
 .container main .sideBar .box{
-    width: 300px;
+    width: 250px;
 }
 
 .container main .sideBar .box.box1 {
-    height: 30%;
+    height: 35%;
 }
 
 .container main .sideBar .box.box2 {
@@ -65,4 +65,3 @@
 .container main .content .box.box2 {
     flex-grow: 1;
 }
-
