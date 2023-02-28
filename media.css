@@ -6,11 +6,20 @@
         display: none;
     }
 
+    .container header {
+        display: flex;
+        flex-direction: column;
+    }
+
     .container header .box.box1 {
         display: flex !important;
         flex-grow: 1 !important;
         height: 30px !important;
     }
+
+    .container header .box.box2 {
+        display: flex;
+    } 
 
     main .sideBar section {
         background-color: green;
