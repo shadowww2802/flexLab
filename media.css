@@ -2,18 +2,14 @@
 @media only screen and (max-width: 600px) {
 
     .container header section {
-        background-color: red;
-
+        background-color: red; 
+        display: none;
     }
 
     .container header .box.box1 {
         display: flex !important;
         flex-grow: 1 !important;
         height: 30px !important;
-    }
-    
-    .container header .box.box2 {
-        display: none;
     }
 
     main .sideBar section {
@@ -38,7 +34,7 @@
     }
     
     .container main .content .box.box2 {
-        flex-grow: 1 !important;
+       display: none;
     }
 
     .container footer {
@@ -51,25 +47,21 @@
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
     
+    .container header {
+        flex-direction: column !important;
+    }
+
     .container header section {
         background-color: red;
+        height: 3vh !important;
     }
 
     .container header .box.box1 {
         flex-grow: 9  !important;
     }
     
-    .container header .box.box2 {
-        flex-grow: 1;
-    }
-
     main {
         height: 80vh !important;
-    }
-
-    main .sideBar section {
-        background-color: green;
-        width: 70px !important;
     }
 
     main .content section {
@@ -77,16 +69,15 @@
     }
 
     main .content .box.box2 {
-        background-color: pink;
-        width: 5px !important;
+        display: none;
     }
 
     .container main .sideBar .box.box1 {
-        height: 35%;
+        display: none;
     }
     
     .container main .sideBar .box.box2 {
-        height: 70%;
+        display: none;
     }
  
     .container footer {
@@ -99,11 +90,49 @@
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     
+    .container main .sideBar .box.box1 {
+        display: block;
+    }
+    
+    .container main .sideBar .box.box2 {
+        display: block;
+    }
+
+    .container header {
+        flex-direction: row !important;
+    }
+
+    .container header section {
+        background-color: red;
+    }
+
+    main {
+        height: 80vh;
+    }
+
+    main .content section {
+        background-color: pink;
+    }
+ 
+    .container footer {
+        background-color: violet;
+        height: 30px;
+    }
+
+    main .sideBar section {
+        background-color: green;
+        display: block;
+    }
+
+    main .content .box.box2 {
+        display: block;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     
+
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
