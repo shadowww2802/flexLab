@@ -1,0 +1,112 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    .container header section {
+        background-color: red;
+
+    }
+
+    .container header .box.box1 {
+        display: flex !important;
+        flex-grow: 1 !important;
+        height: 30px !important;
+    }
+    
+    .container header .box.box2 {
+        display: none;
+    }
+
+    main .sideBar section {
+        background-color: green;
+    }
+
+    .container main {
+        height: 100% !important;
+    }
+
+    .container main .sideBar {
+        display: none !important;
+    }
+
+    main .content section {
+        background-color: pink;
+        height: 50vh !important;
+    }
+
+    .container main .content .box.box1 {
+        flex-grow: 5 !important;
+    }
+    
+    .container main .content .box.box2 {
+        flex-grow: 1 !important;
+    }
+
+    .container footer {
+        background-color: violet;
+        height: 30px !important;
+    }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    
+    .container header section {
+        background-color: red;
+    }
+
+    .container header .box.box1 {
+        flex-grow: 9  !important;
+    }
+    
+    .container header .box.box2 {
+        flex-grow: 1;
+    }
+
+    main {
+        height: 80vh !important;
+    }
+
+    main .sideBar section {
+        background-color: green;
+        width: 70px !important;
+    }
+
+    main .content section {
+        background-color: pink;
+    }
+
+    main .content .box.box2 {
+        background-color: pink;
+        width: 5px !important;
+    }
+
+    .container main .sideBar .box.box1 {
+        height: 35%;
+    }
+    
+    .container main .sideBar .box.box2 {
+        height: 70%;
+    }
+ 
+    .container footer {
+        background-color: violet;
+        height: 30px !important;
+    }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    
+}
